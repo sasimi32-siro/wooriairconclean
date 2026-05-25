@@ -4317,14 +4317,16 @@
   /* 히어로 영역: 페이지 로드 시 자동으로 순차 등장 */
   .oori-title,
   .oori-subtitle,
+  .oori-eyebrow,
   .oori-cta {
     opacity: 0;
     transform: translateY(28px);
     animation: ooriHeroIn 1.2s cubic-bezier(.2, .65, .3, 1) forwards;
   }
   .oori-title    { animation-delay: 0.2s; }
-  .oori-subtitle { animation-delay: 0.7s; }
-  .oori-cta      { animation-delay: 1.2s; }
+  .oori-subtitle { animation-delay: 0.6s; }
+  .oori-eyebrow  { animation-delay: 1.0s; }
+  .oori-cta      { animation-delay: 1.4s; }
   @keyframes ooriHeroIn {
     to {
       opacity: 1;
@@ -4766,19 +4768,18 @@
     z-index: 0;
   }
 
-  /* 위쪽 베이지 그라데이션 오버레이 */
+  /* 위쪽 어두운 그라데이션 오버레이 (데스크탑 히어로 톤과 동일하게 화이트 글자 가독성 확보) */
   .oori-hero::after {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
       to bottom,
-      #f5ead6 0%,
-      #f5ead6 12%,
-      rgba(245, 234, 214, 0.92) 28%,
-      rgba(245, 234, 214, 0.6) 45%,
-      rgba(245, 234, 214, 0.2) 65%,
-      rgba(245, 234, 214, 0) 80%
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.45) 28%,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.15) 75%,
+      rgba(0, 0, 0, 0) 100%
     );
     z-index: 1;
   }
@@ -4790,35 +4791,49 @@
     text-align: center;
   }
 
+  /* 데스크탑 h1(44~80px / weight 800 / white 0.75 / -1.2px) 비율 그대로 축소 */
   .oori-title {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 800;
-    line-height: 1.35;
-    color: #1a1a1a;
-    letter-spacing: -0.5px;
-    margin-bottom: 14px;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: -0.7px;
+    margin-bottom: 4px !important;
   }
 
+  /* 데스크탑 subtitle(44~80px / weight 800 / white 0.95 / -1.2px) 비율 그대로 축소 */
   .oori-subtitle {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #3a3a3a;
-    letter-spacing: -0.3px;
-    margin-bottom: 24px;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: -0.7px;
+    margin-bottom: 20px !important;
   }
 
-  .oori-cta {
+  /* eyebrow (데스크탑 25px / weight 600 / white 0.8 약 0.56x 축소) — 버튼 위에 위치 */
+  .oori-eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0;
+    margin-bottom: 30px !important;
+  }
+
+  .oori-cta,
+  .oori-cta:link,
+  .oori-cta:visited {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 46px;
-    padding: 0 32px;
+    height: 40px;
+    padding: 0 10px;
     background: #e8a93a;
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
-    border-radius: 999px;
+    border-radius: 9px;
     border: none;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(232, 169, 58, 0.25);
@@ -4826,6 +4841,7 @@
     letter-spacing: -0.3px;
     box-sizing: border-box;
     font-family: inherit;
+    text-decoration: none;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
 
@@ -4920,8 +4936,9 @@
 
   @media (max-width: 360px) {
     .oori-hero { height: 520px; }
-    .oori-title { font-size: 21px; }
-    .oori-subtitle { font-size: 13px; }
+    .oori-title { font-size: 22px; line-height: 1.3; letter-spacing: -0.6px; margin-bottom: 3px !important; }
+    .oori-subtitle { font-size: 22px; line-height: 1.3; letter-spacing: -0.6px; margin-bottom: 20px !important; }
+    .oori-eyebrow { font-size: 12px; line-height: 1.5; margin-bottom: 30px !important; }
     .oori-content { padding: 36px 22px 20px; }
     .oori-logo { font-size: 16px; }
     .oori-info-section-title { font-size: 20px; line-height: 1.4; }
@@ -5080,7 +5097,8 @@
       font-size: 25px;
       font-weight: 600;
       color: rgba(255, 255, 255, 0.8);
-      margin-bottom: 22px;
+      margin-bottom: 0;
+      margin-top: 22px;
       letter-spacing: 0;
     }
     .desktop-hero .hero-text h1 {
@@ -5265,9 +5283,9 @@
   <section class="desktop-hero">
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="eyebrow">친환경 프리미엄 전문 청소로 건강을 지켜드릴게요</p>
         <h1>우리가 마시는 공기,</h1>
         <p class="subtitle">정말 깨끗하다고 확신하세요?</p>
+        <p class="eyebrow">친환경 프리미엄 전문 청소로 건강을 지켜드릴게요</p>
       </div>
     </div>
   </section>
@@ -5416,19 +5434,14 @@
 
   <div class="oori-hero-wrap">
     <section class="oori-hero">
-      <video class="oori-hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+      <video class="oori-hero-video" autoplay muted playsinline preload="metadata" aria-hidden="true">
         <source src="assets/video-01.mp4" type="video/mp4" />
       </video>
       <div class="oori-content">
-        <h1 class="oori-title">
-          우리가 마시는 공기,<br />
-          정말 깨끗하다고 확신하세요?
-        </h1>
-        <p class="oori-subtitle">
-          에어컨 내부 곰팡이와 세균은 눈에 보이지 않아요<br />
-          친환경 프리미엄 전문 청소로 건강을 지켜드릴게요
-        </p>
-        <button class="oori-cta" type="button">자세히 보기</button>
+        <h1 class="oori-title">우리가 마시는 공기,</h1>
+        <p class="oori-subtitle">정말 깨끗하다고 확신하세요?</p>
+        <p class="oori-eyebrow">친환경 프리미엄 전문 청소로 건강을 지켜드릴게요</p>
+        <a class="oori-cta" href="#quote">빠른 접수 하기</a>
       </div>
     </section>
   </div>
