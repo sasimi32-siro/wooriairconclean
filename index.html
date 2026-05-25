@@ -523,22 +523,22 @@
     position: relative;
     overflow: hidden;
   }
-  .hero .card-1 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-001.webp') center/cover; }
-  .hero .card-2 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-002.webp') center/cover; }
-  .hero .card-3 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-003.webp') center/cover; }
-  .hero .card-4 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-004.webp') center/cover; }
-  .hero .card-5 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-005.webp') center/cover; }
-  .hero .card-6 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-006.webp') center/cover; }
-  .hero .card-7 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-007.webp') center/cover; }
-  .hero .card-8 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-008.webp') center/cover; }
-  .hero .card-9 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-009.webp') center/cover; }
-  .hero .card-10 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-010.webp') center/cover; }
-  .hero .card-11 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-011.webp') center/cover; }
-  .hero .card-12 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-012.webp') center/cover; }
-  .hero .card-13 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-013.webp') center/cover; }
-  .hero .card-14 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-014.webp') center/cover; }
-  .hero .card-15 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-015.webp') center/cover; }
-  .hero .card-16 { background: url('https://wooriairconclean.riph40.workers.dev/assets/image-016.webp') center/cover; }
+  .hero .card-1 { background: url('assets/image-001.webp') center/cover; }
+  .hero .card-2 { background: url('assets/image-002.webp') center/cover; }
+  .hero .card-3 { background: url('assets/image-003.webp') center/cover; }
+  .hero .card-4 { background: url('assets/image-004.webp') center/cover; }
+  .hero .card-5 { background: url('assets/image-005.webp') center/cover; }
+  .hero .card-6 { background: url('assets/image-006.webp') center/cover; }
+  .hero .card-7 { background: url('assets/image-007.webp') center/cover; }
+  .hero .card-8 { background: url('assets/image-008.webp') center/cover; }
+  .hero .card-9 { background: url('assets/image-009.webp') center/cover; }
+  .hero .card-10 { background: url('assets/image-010.webp') center/cover; }
+  .hero .card-11 { background: url('assets/image-011.webp') center/cover; }
+  .hero .card-12 { background: url('assets/image-012.webp') center/cover; }
+  .hero .card-13 { background: url('assets/image-013.webp') center/cover; }
+  .hero .card-14 { background: url('assets/image-014.webp') center/cover; }
+  .hero .card-15 { background: url('assets/image-015.webp') center/cover; }
+  .hero .card-16 { background: url('assets/image-016.webp') center/cover; }
 
   .hero .card-label { display: none; }
 
@@ -3682,8 +3682,8 @@
     .logo img { height: 19px; }
     /* 모바일 히어로 100% 꽉 차게 */
     .hero {
-      height: 103svh;
-      min-height: 577px;
+      height: 100svh;
+      min-height: 560px;
       padding: 90px 16px 50px;
     }
     /* 모바일에서 스크롤 인디케이터 표시 */
@@ -3698,13 +3698,12 @@
     .hero-inner {
       padding: 0 16px;
     }
-    .hero-eyebrow { font-size: 29px; }
-    .hero-title .line-1 { font-size: 23px; }
-    .hero-title .line-2 { font-size: 41px; }
-    .hero-title .line-3 { font-size: 17px; margin-top: 20px; }
-    .hero-title .line-4 { font-size: 20px; }
+    .hero-title .line-1 { font-size: 20px; }
+    .hero-title .line-2 { font-size: 38px; }
+    .hero-title .line-3 { font-size: 14px; margin-top: 20px; }
+    .hero-title .line-4 { font-size: 17px; }
     .hero-search { margin-top: 28px; padding: 14px 24px; }
-    .hero-search-text { font-size: 17px; }
+    .hero-search-text { font-size: 14px; }
     .hero-search::after { width: 28px; height: 28px; font-size: 13px; }
     .btn { padding: 11px 24px; font-size: 13px; min-width: 120px; }
     /* 모바일: 카드 세로 길게 (가운데 빈공간 채우기) */
@@ -4400,7 +4399,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("https://wooriairconclean.riph40.workers.dev/assets/image-017.webp");
+    background-image: url("assets/image-017.webp");
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -4533,15 +4532,15 @@
     gap: 10px;
   }
 
-  /* 견적문의 버튼 - 사용자 평점 yellow-mark 스타일 (노랑배경 + 검정 텍스트) */
+  /* 견적문의 버튼 */
   .oori-quote-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 32px;
     padding: 0 20px;
-    background: var(--kakao-yellow, #FEE500);
-    color: #1a1a1a;
+    background: #ece8f5;
+    color: #4a3f7a;
     font-size: 14px;
     font-weight: 700;
     border-radius: 8px;
@@ -4555,7 +4554,7 @@
   }
 
   .oori-quote-btn:active {
-    background: #FFD600;
+    background: #ddd6ed;
   }
 
   .oori-hamburger {
@@ -4769,131 +4768,78 @@
     z-index: 0;
   }
 
-  /* 좌측 상단만 부드럽게 페이드 (아래는 영향 없음) */
+  /* 그라데이션 오버레이 제거 (text-shadow로만 가독성 확보) */
   .oori-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    background:
-      radial-gradient(
-        ellipse 75% 55% at top left,
-        rgba(255, 248, 230, 0.95) 0%,
-        rgba(255, 248, 230, 0.75) 30%,
-        rgba(255, 248, 230, 0.4) 60%,
-        rgba(255, 248, 230, 0) 100%
-      );
-    display: block;
+    display: none;
   }
 
   .oori-content {
     position: relative;
     z-index: 2;
-    padding: 44px 26px 28px;
-    text-align: left;
+    padding: 44px 28px 24px;
+    text-align: center;
   }
 
-  /* eyebrow - 시안: 청록색 작은 텍스트, 메인 카피 위에 배치 */
-  .oori-eyebrow {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: #1565c0;
-    letter-spacing: 0.02em;
-    text-shadow: none;
-    margin: 0 0 18px !important;
-  }
-
-  /* 메인 타이틀 - 시안: 짙은 검정, 굵게, "정말 깨끗하다고" 파란색 강조 */
+  /* 데스크탑 h1(44~80px / weight 800 / white 0.75 / -1.2px) 비율 그대로 축소 */
   .oori-title {
-    font-size: 33px;
+    font-size: 28px;
     font-weight: 800;
     line-height: 1.3;
-    color: #000000;
-    letter-spacing: -0.8px;
-    text-shadow: none;
-    margin: 0 0 18px !important;
-  }
-  .oori-title .oori-title-accent {
-    color: #D99820;
-    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.7px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 4px !important;
   }
 
-  /* 서브 카피 - 회색 톤 */
+  /* 데스크탑 subtitle(44~80px / weight 800 / white 0.95 / -1.2px) 비율 그대로 축소 */
   .oori-subtitle {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.55;
-    color: #000000;
-    letter-spacing: -0.2px;
-    text-shadow: none;
-    margin: 0 0 24px !important;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #ffffff;
+    letter-spacing: -0.7px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px !important;
   }
 
-  /* CTA 버튼 - 노랑 알약 + 검정 텍스트 */
+  /* eyebrow (데스크탑 25px / weight 600 / white 0.8 약 0.56x 축소) — 버튼 위에 위치 */
+  .oori-eyebrow {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+    margin-bottom: 30px !important;
+  }
+
   .oori-cta,
   .oori-cta:link,
   .oori-cta:visited {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    height: 48px;
-    padding: 0 28px;
-    background: var(--kakao-yellow, #FEE500);
-    color: #1a1a1a;
+    height: 40px;
+    padding: 0 10px;
+    background: #e8a93a;
+    color: #fff;
     font-size: 16px;
-    font-weight: 800;
-    border-radius: 999px;
+    font-weight: 700;
+    border-radius: 9px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 6px 18px rgba(245, 184, 45, 0.35);
+    box-shadow: 0 2px 8px rgba(232, 169, 58, 0.25);
     line-height: 1;
     letter-spacing: -0.3px;
     box-sizing: border-box;
     font-family: inherit;
     text-decoration: none;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
-    margin-bottom: 18px;
-  }
-  .oori-cta:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 22px rgba(245, 184, 45, 0.42);
-  }
-  .oori-cta-icon {
-    font-size: 14px;
-    line-height: 1;
-  }
-  .oori-cta:active {
-    transform: scale(0.97);
-    box-shadow: 0 3px 10px rgba(245, 184, 45, 0.3);
   }
 
-  /* 하단 배지 영역 - 친환경 세제 사용 | 안심 서비스 */
-  .oori-badges {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 13px;
-    font-weight: 800;
-    color: #000000;
-    letter-spacing: -0.2px;
-  }
-  .oori-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .oori-badge-icon {
-    font-size: 13px;
-    color: #1565c0;
-  }
-  .oori-badge-sep {
-    display: inline-block;
-    width: 1px;
-    height: 11px;
-    background: #c8d0d8;
+  .oori-cta:active {
+    transform: scale(0.97);
+    box-shadow: 0 1px 4px rgba(232, 169, 58, 0.2);
   }
 
   /* ==================== 주요 경영 정보 슬라이드 섹션 ==================== */
@@ -4982,12 +4928,10 @@
 
   @media (max-width: 360px) {
     .oori-hero { height: 520px; }
-    .oori-eyebrow { font-size: 12px; margin-bottom: 14px !important; }
-    .oori-title { font-size: 30px; line-height: 1.3; letter-spacing: -0.6px; margin-bottom: 14px !important; }
-    .oori-subtitle { font-size: 14px; line-height: 1.55; margin-bottom: 20px !important; }
-    .oori-cta { height: 44px; padding: 0 22px; font-size: 15px; margin-bottom: 14px; }
-    .oori-badges { font-size: 12px; gap: 10px; }
-    .oori-content { padding: 36px 22px 24px; }
+    .oori-title { font-size: 25px; line-height: 1.3; letter-spacing: -0.6px; margin-bottom: 3px !important; }
+    .oori-subtitle { font-size: 25px; line-height: 1.3; letter-spacing: -0.6px; margin-bottom: 10px !important; }
+    .oori-eyebrow { font-size: 15px; line-height: 1.5; margin-bottom: 30px !important; }
+    .oori-content { padding: 36px 22px 20px; }
     .oori-logo { font-size: 16px; }
     .oori-info-section-title { font-size: 20px; line-height: 1.4; }
     .oori-info-section-title .heart { font-size: 20px; }
@@ -5104,7 +5048,7 @@
       margin: 13px calc(27px + 1vw) 0;
       background:
       linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-      url('https://wooriairconclean.riph40.workers.dev/assets/image-018.webp') center/cover no-repeat;
+      url('assets/image-018.webp') center/cover no-repeat;
       height: 75vh;
       min-height: 0;
       max-height: 75vh;
@@ -5439,7 +5383,7 @@
 <div class="oori-mobile-root">
   <header class="oori-header">
     <a class="oori-logo" href="#" onclick="event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' });" aria-label="우리에어컨청소 - 맨 위로">
-      <img src="https://wooriairconclean.riph40.workers.dev/assets/image-019.webp" alt="OoRI 우리에어컨청소" />
+      <img src="assets/image-019.webp" alt="OoRI 우리에어컨청소" />
     </a>
     <div class="oori-header-right">
       <button class="oori-quote-btn" type="button">견적문의</button>
@@ -5483,15 +5427,13 @@
   <div class="oori-hero-wrap">
     <section class="oori-hero">
       <video class="oori-hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-        <source src="https://wooriairconclean.riph40.workers.dev/assets/video-01.mp4" type="video/mp4" />
+        <source src="assets/video-01.mp4" type="video/mp4" />
       </video>
       <div class="oori-content">
-        <h1 class="oori-title">
-          우리가 마시는 공기,<br/>
-          <span class="oori-title-accent">정말 깨끗하다고</span><br/>
-          확신하세요?
-        </h1>
-        <p class="oori-subtitle">친환경 프리미엄 전문 청소로<br/>건강을 지켜드릴게요</p>
+        <h1 class="oori-title">우리가 마시는 공기,</h1>
+        <p class="oori-subtitle">정말 깨끗하다고 확신하세요?</p>
+        <p class="oori-eyebrow">친환경 프리미엄 전문 청소로 건강을 지켜드릴게요</p>
+        <a class="oori-cta" href="#quote">빠른 접수 하기</a>
       </div>
     </section>
   </div>
@@ -5512,7 +5454,7 @@
 
         <!-- Card 1: 친환경 약품 -->
         <div class="review-card">
-          <div class="card-img" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-020.webp');"></div>
+          <div class="card-img" style="background-image: url('assets/image-020.webp');"></div>
           <div class="card-body">
             <div class="card-title-row">
               <div class="card-title"><span class="yellow-mark">친환경 약품</span>100%<span class="emoji">🌿</span></div>
@@ -5524,7 +5466,7 @@
 
         <!-- Card 2: 배상책임보험 -->
         <div class="review-card">
-          <div class="card-img" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-021.webp');"></div>
+          <div class="card-img" style="background-image: url('assets/image-021.webp');"></div>
           <div class="card-body">
             <div class="card-title-row">
               <div class="card-title"><span class="yellow-mark">배상책임보험</span>가입<span class="emoji">🛡️</span></div>
@@ -5536,7 +5478,7 @@
 
         <!-- Card 3: 청소대행사 정식 인증회사 -->
         <div class="review-card">
-          <div class="card-img" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-022.webp');"></div>
+          <div class="card-img" style="background-image: url('assets/image-022.webp');"></div>
           <div class="card-body">
             <div class="card-title-row">
               <div class="card-title"><span class="yellow-mark">정식 인증회사</span>등록<span class="emoji">📜</span></div>
@@ -5548,7 +5490,7 @@
 
         <!-- Card 4: 제조사 매뉴얼 기준 작업 -->
         <div class="review-card">
-          <div class="card-img" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-023.webp');"></div>
+          <div class="card-img" style="background-image: url('assets/image-023.webp');"></div>
           <div class="card-body">
             <div class="card-title-row">
               <div class="card-title"><span class="yellow-mark">제조사 매뉴얼</span>작업<span class="emoji">📘</span></div>
@@ -5560,7 +5502,7 @@
 
         <!-- Card 5: 베테랑 전문 엔지니어 -->
         <div class="review-card">
-          <div class="card-img" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-024.webp');"></div>
+          <div class="card-img" style="background-image: url('assets/image-024.webp');"></div>
           <div class="card-body">
             <div class="card-title-row">
               <div class="card-title"><span class="yellow-mark">베테랑</span>엔지니어<span class="emoji">🛠️</span></div>
@@ -5572,7 +5514,7 @@
 
         <!-- Card 6: 대형 현장 시공 경험 -->
         <div class="review-card">
-          <div class="card-img" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-025.webp');"></div>
+          <div class="card-img" style="background-image: url('assets/image-025.webp');"></div>
           <div class="card-body">
             <div class="card-title-row">
               <div class="card-title"><span class="yellow-mark">대형 현장</span>시공 경험<span class="emoji">🏥</span></div>
@@ -5597,7 +5539,7 @@
       <!-- 카드 1: 안심 상담 -->
       <article class="oori-info-card oori-has-photo" role="button" tabindex="0" aria-label="안심 상담">
         <img class="oori-info-card-bg"
-             src="https://wooriairconclean.riph40.workers.dev/assets/image-026.webp"
+             src="assets/image-026.webp"
              alt="" loading="lazy" />
         <div class="oori-info-card-label">
           <div class="card-title"><span class="yellow-mark">재방문율</span>80%<span class="emoji">💛</span></div>
@@ -5608,7 +5550,7 @@
       <!-- 카드 2: AS 보장 가능 -->
       <article class="oori-info-card oori-has-photo" role="button" tabindex="0" aria-label="AS 보장 가능">
         <img class="oori-info-card-bg"
-             src="https://wooriairconclean.riph40.workers.dev/assets/image-027.webp"
+             src="assets/image-027.webp"
              alt="" loading="lazy" />
         <div class="oori-info-card-label">
           <div class="card-title"><span class="yellow-mark">AS</span>1개월 보장<span class="emoji">🛡️</span></div>
@@ -5619,7 +5561,7 @@
       <!-- 카드 3: 사용자 평점 -->
       <article class="oori-info-card oori-has-photo" role="button" tabindex="0" aria-label="사용자 평점">
         <img class="oori-info-card-bg"
-             src="https://wooriairconclean.riph40.workers.dev/assets/image-028.webp"
+             src="assets/image-028.webp"
              alt="" loading="lazy" />
         <div class="oori-info-card-label">
           <div class="card-title"><span class="yellow-mark">사용자 평점</span>4.9점<span class="emoji">⭐</span></div>
@@ -5630,7 +5572,7 @@
       <!-- 카드 4: 빠른 방문 -->
       <article class="oori-info-card oori-has-photo" role="button" tabindex="0" aria-label="빠른 방문">
         <img class="oori-info-card-bg"
-             src="https://wooriairconclean.riph40.workers.dev/assets/image-029.webp"
+             src="assets/image-029.webp"
              alt="" loading="lazy" />
         <div class="oori-info-card-label">
           <div class="card-title"><span class="yellow-mark">빠른 상담</span>빠른 방문<span class="emoji">⚡</span></div>
@@ -5656,7 +5598,7 @@
 
         <!-- STEP 01 -->
         <div class="process-card">
-          <div class="thumb" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-030.webp');">
+          <div class="thumb" style="background-image: url('assets/image-030.webp');">
             <span class="step-badge">STEP 01</span>
           </div>
           <h3 class="step-title"><span class="yellow-mark">01. 기기 작동 및 점검</span></h3>
@@ -5665,7 +5607,7 @@
 
         <!-- STEP 02 -->
         <div class="process-card">
-          <div class="thumb" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-031.webp');">
+          <div class="thumb" style="background-image: url('assets/image-031.webp');">
             <span class="step-badge">STEP 02</span>
           </div>
           <h3 class="step-title"><span class="yellow-mark">02. 실내기 완전분해</span></h3>
@@ -5674,7 +5616,7 @@
 
         <!-- STEP 03 -->
         <div class="process-card">
-          <div class="thumb" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-032.webp');">
+          <div class="thumb" style="background-image: url('assets/image-032.webp');">
             <span class="step-badge">STEP 03</span>
           </div>
           <h3 class="step-title"><span class="yellow-mark">03. 열교환기 고압세척</span></h3>
@@ -5683,7 +5625,7 @@
 
         <!-- STEP 04 -->
         <div class="process-card">
-          <div class="thumb" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-033.webp');">
+          <div class="thumb" style="background-image: url('assets/image-033.webp');">
             <span class="step-badge">STEP 04</span>
           </div>
           <h3 class="step-title"><span class="yellow-mark">04. 부품세척</span></h3>
@@ -5692,7 +5634,7 @@
 
         <!-- STEP 05 -->
         <div class="process-card">
-          <div class="thumb" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-034.webp');">
+          <div class="thumb" style="background-image: url('assets/image-034.webp');">
             <span class="step-badge">STEP 05</span>
           </div>
           <h3 class="step-title"><span class="yellow-mark">05. 건조작업</span></h3>
@@ -5701,7 +5643,7 @@
 
         <!-- STEP 06 -->
         <div class="process-card">
-          <div class="thumb" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-035.webp');">
+          <div class="thumb" style="background-image: url('assets/image-035.webp');">
             <span class="step-badge">STEP 06</span>
           </div>
           <h3 class="step-title"><span class="yellow-mark">06. 실내기 재조립</span></h3>
@@ -5710,7 +5652,7 @@
 
         <!-- STEP 07 -->
         <div class="process-card">
-          <div class="thumb" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-036.webp');">
+          <div class="thumb" style="background-image: url('assets/image-036.webp');">
             <span class="step-badge">STEP 07</span>
           </div>
           <h3 class="step-title"><span class="yellow-mark">07. 실외기 사이클 진단</span></h3>
@@ -5719,7 +5661,7 @@
 
         <!-- STEP 08 -->
         <div class="process-card">
-          <div class="thumb" style="background-image: url('https://wooriairconclean.riph40.workers.dev/assets/image-037.webp');">
+          <div class="thumb" style="background-image: url('assets/image-037.webp');">
             <span class="step-badge">STEP 08</span>
           </div>
           <h3 class="step-title"><span class="yellow-mark">08. 작동 테스트 및 점검</span></h3>
@@ -5742,7 +5684,7 @@
     <div class="sr-track-wrap">
       <div class="sr-track">
         <div class="sr-card">
-          <img class="sr-img" src="https://wooriairconclean.riph40.workers.dev/assets/image-038.webp" alt="가정집 1웨이 에어컨 청소 후 온도 측정" loading="lazy" decoding="async" />
+          <img class="sr-img" src="assets/image-038.webp" alt="가정집 1웨이 에어컨 청소 후 온도 측정" loading="lazy" decoding="async" />
           <div class="sr-overlay"></div>
           <div class="sr-content">
             <p class="sr-title">청소 후 차가워진 바람, 18도!</p>
@@ -5750,7 +5692,7 @@
           </div>
         </div>
         <div class="sr-card">
-          <img class="sr-img" src="https://wooriairconclean.riph40.workers.dev/assets/image-039.webp" alt="스킨케어샵 에어컨청소" loading="lazy" decoding="async" />
+          <img class="sr-img" src="assets/image-039.webp" alt="스킨케어샵 에어컨청소" loading="lazy" decoding="async" />
           <div class="sr-overlay"></div>
           <div class="sr-content">
             <p class="sr-title">스킨케어샵 카세트형 청소</p>
@@ -5758,7 +5700,7 @@
           </div>
         </div>
         <div class="sr-card">
-          <img class="sr-img" src="https://wooriairconclean.riph40.workers.dev/assets/image-040.webp" alt="식당 에어컨청소" loading="lazy" decoding="async" />
+          <img class="sr-img" src="assets/image-040.webp" alt="식당 에어컨청소" loading="lazy" decoding="async" />
           <div class="sr-overlay"></div>
           <div class="sr-content">
             <p class="sr-title">매장 천장형 에어컨 완전분해</p>
@@ -5766,7 +5708,7 @@
           </div>
         </div>
         <div class="sr-card">
-          <img class="sr-img" src="https://wooriairconclean.riph40.workers.dev/assets/image-041.webp" alt="드럼세탁기 청소" loading="lazy" decoding="async" />
+          <img class="sr-img" src="assets/image-041.webp" alt="드럼세탁기 청소" loading="lazy" decoding="async" />
           <div class="sr-overlay"></div>
           <div class="sr-content">
             <p class="sr-title">드럼세탁기 분해세척</p>
@@ -5774,7 +5716,7 @@
           </div>
         </div>
         <div class="sr-card">
-          <img class="sr-img" src="https://wooriairconclean.riph40.workers.dev/assets/image-042.webp" alt="상가 에어컨청소" loading="lazy" decoding="async" />
+          <img class="sr-img" src="assets/image-042.webp" alt="상가 에어컨청소" loading="lazy" decoding="async" />
           <div class="sr-overlay"></div>
           <div class="sr-content">
             <p class="sr-title">층고 높은 상가 천장형 청소</p>
@@ -5782,7 +5724,7 @@
           </div>
         </div>
         <div class="sr-card">
-          <img class="sr-img" src="https://wooriairconclean.riph40.workers.dev/assets/image-043.webp" alt="병원 입원실 에어컨청소" loading="lazy" decoding="async" />
+          <img class="sr-img" src="assets/image-043.webp" alt="병원 입원실 에어컨청소" loading="lazy" decoding="async" />
           <div class="sr-overlay"></div>
           <div class="sr-content">
             <p class="sr-title">병원 입원실 천장형 분해세척</p>
@@ -5790,7 +5732,7 @@
           </div>
         </div>
         <div class="sr-card">
-          <img class="sr-img" src="https://wooriairconclean.riph40.workers.dev/assets/image-044.webp" alt="약국 에어컨청소" loading="lazy" decoding="async" />
+          <img class="sr-img" src="assets/image-044.webp" alt="약국 에어컨청소" loading="lazy" decoding="async" />
           <div class="sr-overlay"></div>
           <div class="sr-content">
             <p class="sr-title">약국 천장형 카세트 분해세척</p>
@@ -5798,7 +5740,7 @@
           </div>
         </div>
         <div class="sr-card">
-          <img class="sr-img" src="https://wooriairconclean.riph40.workers.dev/assets/image-045.webp" alt="정형외과 에어컨청소" loading="lazy" decoding="async" />
+          <img class="sr-img" src="assets/image-045.webp" alt="정형외과 에어컨청소" loading="lazy" decoding="async" />
           <div class="sr-overlay"></div>
           <div class="sr-content">
             <p class="sr-title">정형외과 천장형 청소</p>
@@ -5828,11 +5770,11 @@
         <div class="ba-pair-imgs">
           <div class="ba-img-wrap">
             <span class="ba-tag">BEFORE</span>
-            <img src="https://wooriairconclean.riph40.workers.dev/assets/image-046.webp" alt="천장형 에어컨 본체 청소 전" loading="lazy" />
+            <img src="assets/image-046.webp" alt="천장형 에어컨 본체 청소 전" loading="lazy" />
           </div>
           <div class="ba-img-wrap">
             <span class="ba-tag after">AFTER</span>
-            <img src="https://wooriairconclean.riph40.workers.dev/assets/image-047.webp" alt="천장형 에어컨 본체 청소 후" loading="lazy" />
+            <img src="assets/image-047.webp" alt="천장형 에어컨 본체 청소 후" loading="lazy" />
           </div>
         </div>
         <div class="ba-caption">
@@ -5844,11 +5786,11 @@
         <div class="ba-pair-imgs">
           <div class="ba-img-wrap">
             <span class="ba-tag">BEFORE</span>
-            <img src="https://wooriairconclean.riph40.workers.dev/assets/image-048.webp" alt="벽걸이 토출구 & 그릴 청소 전" loading="lazy" />
+            <img src="assets/image-048.webp" alt="벽걸이 토출구 & 그릴 청소 전" loading="lazy" />
           </div>
           <div class="ba-img-wrap">
             <span class="ba-tag after">AFTER</span>
-            <img src="https://wooriairconclean.riph40.workers.dev/assets/image-049.webp" alt="벽걸이 토출구 & 그릴 청소 후" loading="lazy" />
+            <img src="assets/image-049.webp" alt="벽걸이 토출구 & 그릴 청소 후" loading="lazy" />
           </div>
         </div>
         <div class="ba-caption">
@@ -5860,11 +5802,11 @@
         <div class="ba-pair-imgs">
           <div class="ba-img-wrap">
             <span class="ba-tag">BEFORE</span>
-            <img src="https://wooriairconclean.riph40.workers.dev/assets/image-050.webp" alt="벽걸이 분해 부품 청소 전" loading="lazy" />
+            <img src="assets/image-050.webp" alt="벽걸이 분해 부품 청소 전" loading="lazy" />
           </div>
           <div class="ba-img-wrap">
             <span class="ba-tag after">AFTER</span>
-            <img src="https://wooriairconclean.riph40.workers.dev/assets/image-051.webp" alt="벽걸이 분해 부품 청소 후" loading="lazy" />
+            <img src="assets/image-051.webp" alt="벽걸이 분해 부품 청소 후" loading="lazy" />
           </div>
         </div>
         <div class="ba-caption">
@@ -5876,11 +5818,11 @@
         <div class="ba-pair-imgs">
           <div class="ba-img-wrap">
             <span class="ba-tag">BEFORE</span>
-            <img src="https://wooriairconclean.riph40.workers.dev/assets/image-052.webp" alt="송풍팬 청소 전" loading="lazy" />
+            <img src="assets/image-052.webp" alt="송풍팬 청소 전" loading="lazy" />
           </div>
           <div class="ba-img-wrap">
             <span class="ba-tag after">AFTER</span>
-            <img src="https://wooriairconclean.riph40.workers.dev/assets/image-053.webp" alt="송풍팬 청소 후" loading="lazy" />
+            <img src="assets/image-053.webp" alt="송풍팬 청소 후" loading="lazy" />
           </div>
         </div>
         <div class="ba-caption">
